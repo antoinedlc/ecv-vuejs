@@ -1,26 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div>
+        <img alt="Vue logo" src="./assets/logo.png">
+        <Sample title="Titre" content="Ceci est la description !" :items="items" />
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+    // Import dynamic data
+    import { DataSample } from './data/sample.js'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+    // Import component
+    import Sample from './components/Sample.vue'
+
+    export default {
+        // Define dynamic data to pass in the template
+        created() {
+            this.items = DataSample
+        },
+        name: 'App',
+        // Specify which components are used
+        components: {
+            Sample
+        }
+    }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+    @import './assets/style/app.css';
 </style>

@@ -1,0 +1,25 @@
+// Global
+@import './global/fonts';
+@import './global/variables';
+@import './global/typography';
+
+// Atoms
+@import './atoms/links';
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.5rem;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $gray_blue_dark;
+    margin: 0;
+}
