@@ -13,14 +13,14 @@
         -->
         <h1>{{ title }}</h1>
         <p>{{ content }}</p>
-        <div class="words">
+        <div class="items">
             <!--
                 La directive v-for="item in items" permets de faire un foreach
                 du tableau "items" et de récupérer chaque élément en tant que "item".
                 La directive :key="item.key" permet de définir quelle clé permettra
                 de distinguer chaque élément des autres ((un id, un slug...))
             -->
-            <span v-for="(item, index) in items" :key="item.index" style="margin-right: 2.4rem">{{ index }} : {{ item.text }}</span>
+            <span v-for="(item, index) in items" :key="item.index" class="item" style="margin-right: 2.4rem">{{ index }} : {{ item.text }}</span>
         </div>
     </div>
 </template>
