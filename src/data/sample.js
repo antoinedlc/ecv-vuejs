@@ -4,4 +4,5 @@ export const DataSample = [
     { text: 'Troisième élément' },
     { text: 'Quatrième élément' },
     { text: 'Cinquième élément' },
+    { text: 'Sixième élément' },
 ];
