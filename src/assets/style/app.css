@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
 p {
   margin-bottom: 2.4rem;
 }
@@ -146,22 +147,22 @@ div.goodies_second_line_poster h3 {
   margin-top: 4%;
 }
 
-body {
+.homepage {
   font-family: Vidaloka;
   background: no-repeat center url("../../assets/img/museum.jpg");
 }
 
-body .title {
+.homepage .title {
   text-align: center;
 }
 
-body .title h1 {
+.homepage .title h1 {
   z-index: 1;
   color: #EFE5AD;
   font-size: 150px;
 }
 
-body .homepagebis {
+.homepage .homepagebis {
   background-color: black;
   opacity: 0.5;
   width: 100%;
@@ -170,7 +171,7 @@ body .homepagebis {
   z-index: -1;
 }
 
-body .homepage_line {
+.homepage .homepage_line {
   height: 1px;
   width: 40%;
   background-color: #EFE5AD;
@@ -178,7 +179,7 @@ body .homepage_line {
   margin-right: auto;
 }
 
-body p {
+.homepage p {
   color: #EFE5AD;
   font-family: Vidaloka;
   font-size: 24px;
@@ -186,7 +187,7 @@ body p {
   margin-top: 5%;
 }
 
-body .homepage_bubble {
+.homepage .homepage_bubble {
   z-index: 1;
   background-color: #EFE5AD;
   width: 18%;
@@ -197,12 +198,110 @@ body .homepage_bubble {
   margin-top: 10%;
 }
 
-body .homepage_bubble p {
+.homepage .homepage_bubble p {
   z-index: 1;
   color: black;
   text-align: center;
   font-size: 30px;
   font-family: Vidaloka;
+}
+
+body {
+  background-color: black;
+}
+
+.prochaine_expo {
+  background-color: black;
+  font-family: Vidaloka;
+  color: #EFE5AD;
+}
+
+.prochaine_expo h1 {
+  color: #EFE5AD;
+  font-family: Vidaloka;
+  text-align: center;
+}
+
+.prochaine_expo .prochaines_expo_first {
+  margin-left: 5%;
+  display: inline-block;
+  width: 21%;
+}
+
+.prochaine_expo .prochaines_expo_first img {
+  width: 80%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.prochaine_expo .prochaines_expo_first p {
+  font-size: 24px;
+}
+
+.prochaine_expo .prochaines_expo_first span {
+  font-size: 36px;
+}
+
+.prochaine_expo .prochaines_expo_second {
+  margin-left: 2%;
+  display: inline-block;
+  width: 21%;
+}
+
+.prochaine_expo .prochaines_expo_second img {
+  width: 90%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.prochaine_expo .prochaines_expo_second p {
+  font-size: 24px;
+}
+
+.prochaine_expo .prochaines_expo_second span {
+  font-size: 36px;
+}
+
+.prochaine_expo .prochaines_expo_three {
+  margin-left: 2%;
+  display: inline-block;
+  width: 21%;
+}
+
+.prochaine_expo .prochaines_expo_three img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.prochaine_expo .prochaines_expo_three p {
+  font-size: 24px;
+}
+
+.prochaine_expo .prochaines_expo_three span {
+  font-size: 36px;
+}
+
+.prochaine_expo .prochaines_expo_four {
+  margin-left: 2%;
+  display: inline-block;
+  width: 21%;
+}
+
+.prochaine_expo .prochaines_expo_four img {
+  width: 100%;
+  height: 200px;
+}
+
+.prochaine_expo .prochaines_expo_four p {
+  font-size: 24px;
+}
+
+.prochaine_expo .prochaines_expo_four span {
+  font-size: 36px;
 }
 
 a {
