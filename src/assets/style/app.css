@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
 p {
   margin-bottom: 2.4rem;
 }
@@ -14,6 +15,134 @@ h1, h2, h3, h4, h5, h6 {
 .title {
   font-size: 3.2rem;
   font-weight: 700;
+}
+
+body {
+  display: inline-block;
+  background-color: #000000;
+}
+
+body .goodies_line {
+  width: 18%;
+  height: 0.5px;
+  background-color: #687CC5;
+  margin-left: 3.2%;
+  margin-bottom: 1%;
+}
+
+body h1 {
+  display: inline-block;
+  color: #687CC5;
+  font-family: Vidaloka;
+  font-size: 60px;
+  margin-left: 3%;
+}
+
+body h4 {
+  margin-left: 1%;
+  display: inline-block;
+  font-size: 22px;
+  font-family: Vidaloka;
+  color: #EFE5AD;
+  opacity: 0.4;
+}
+
+div.goodies_first_line {
+  color: #EFE5AD;
+  font-family: Vidaloka;
+  margin-left: 5%;
+}
+
+div.goodies_first_line_tasse1 {
+  display: inline-block;
+  width: 30%;
+}
+
+div.goodies_first_line_tasse1 img {
+  display: inline-block;
+  width: 50%;
+  max-height: 200px;
+}
+
+div.goodies_first_line_tasse1 h3 {
+  margin-top: 4%;
+}
+
+div.goodies_first_line_sweat1 {
+  display: inline-block;
+  width: 30%;
+}
+
+div.goodies_first_line_sweat1 img {
+  width: 50%;
+  max-height: 200px;
+}
+
+div.goodies_first_line_sweat1 h3 {
+  margin-top: 4%;
+}
+
+div.goodies_first_line_poster1 {
+  display: inline-block;
+  width: 30%;
+}
+
+div.goodies_first_line_poster1 img {
+  width: 50%;
+  max-height: 200px;
+}
+
+div.goodies_first_line_poster1 h3 {
+  margin-top: 4%;
+}
+
+div.goodies_second_line {
+  color: #EFE5AD;
+  font-family: Vidaloka;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+
+div.goodies_second_line_tasse {
+  display: inline-block;
+  width: 30%;
+}
+
+div.goodies_second_line_tasse img {
+  width: 50%;
+  min-height: 200px;
+}
+
+div.goodies_second_line_tasse h3 {
+  margin-top: 4%;
+}
+
+div.goodies_second_line_sweat {
+  display: inline-block;
+  width: 30%;
+}
+
+div.goodies_second_line_sweat img {
+  width: 50%;
+  max-height: 200px;
+}
+
+div.goodies_second_line_sweat h3 {
+  margin-top: 4%;
+}
+
+div.goodies_second_line_poster {
+  display: inline-block;
+  width: 30%;
+}
+
+div.goodies_second_line_poster img {
+  width: 50%;
+  max-height: 200px;
+}
+
+div.goodies_second_line_poster h3 {
+  margin-top: 4%;
 }
 
 a {
