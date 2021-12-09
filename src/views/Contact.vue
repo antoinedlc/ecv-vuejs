@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <Sample title="About" content="Ceci est la description !" :items="DataSample.items" />
+    <div class="section">
+        <Sample title="Contact" content="Ceci est la description !" :items="DataSample.items" />
         <ImgContent :src="require('../assets/img/logo.png')" title="Image + contenu" content="Ceci est la description !" />
     </div>
 </template>
@@ -20,7 +20,7 @@
         created() {
             this.DataSample = DataSample
         },
-        name: 'About',
+        name: 'Contact',
         // Specify which components are used
         components: {
             ImgContent,

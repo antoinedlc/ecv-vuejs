@@ -1,14 +1,14 @@
 <template>
     <div>
         <div id="nav">
-            <router-link to="/">Home</router-link>
-            <router-link to="/about">About</router-link>
-            <router-link to="/expo">zrgzgaeg</router-link>
+            <router-link to="/" id="link-home">Accueil</router-link>
+            <span id="theme-toggle">Mode</span>
+            <router-link to="/shop" id="link-shop">Boutique</router-link>
+            <router-link to="/contact" id="link-contact">Contact</router-link>
         </div>
         <div id="router-container">
             <router-view></router-view>
         </div>
-        <h1>BOUGE PAS</h1>
     </div>
 </template>
 
