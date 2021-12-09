@@ -5,7 +5,9 @@
             <router-link to="/about">About</router-link>
             <router-link to="/expo">zrgzgaeg</router-link>
         </div>
-        <router-view id="router-view"></router-view>
+        <div id="router-container">
+            <router-view></router-view>
+        </div>
         <h1>BOUGE PAS</h1>
     </div>
 </template>

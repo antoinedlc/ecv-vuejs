@@ -52,7 +52,7 @@ body {
   margin: 0;
 }
 
-#app {
+#router-container {
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
 }
