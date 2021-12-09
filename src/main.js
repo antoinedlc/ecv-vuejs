@@ -10,7 +10,7 @@ createApp(App)
     .mount('#app')
 
 router.beforeEach((to, from, next) => {
-    document.getElementById('router-view').style.opacity = '0';
+    document.getElementById('router-container').style.opacity = '0';
     setTimeout(() => {
         next()
     }, 200)
@@ -18,6 +18,6 @@ router.beforeEach((to, from, next) => {
 
 router.afterEach(() => {
     setTimeout(() => {
-        document.getElementById('router-view').style.opacity = '1';
+        document.getElementById('router-container').style.opacity = '1';
     }, 1000)
 })
