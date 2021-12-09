@@ -14,79 +14,91 @@
         <div id="app">
         </div>
         <div class="goodies">
-                <div class="goodies_line"></div>
-                <h1>GOODIES</h1> <h4>Billets</h4>
-
-                <div class="goodies_first_line">
-
-                    <div class="goodies_first_line_tasse1">
-
+            <div class="goodies_line"></div>
+            <h1>GOODIES</h1>
+            <h4>Billets</h4>
+            <div id="overlay"></div>
+            <div class="goodies_first_line">
+                <div class="goodies_first_line_tasse1 goodies_elem">
                     <img src="goodies_tasse.jpg" alt="">
-                    
-                    <h3>Tasse Sculptée</h3> 
-
-                    <p>13,90€</p>
-
-                    </div>
-
-                    <div class="goodies_first_line_poster1">
-
-                    <img src="goodies_poster.png" alt="">
-
-                    <h3>Poster du tableau de Marie-Antoinette</h3>
-
-                    <p>19,90€</p>
-
-
-                    </div>
-
-                    <div class="goodies_first_line_sweat1">
-
-                    <img src="goodies_sweat.jpg" alt="">
-
-                    <h3>Sweatshirt imprimé </h3>
-
-                    <p>29,90€</p>
-
-                    </div>
-
-                </div>
-
-                <div class="goodies_second_line">
-
-                    <div class="goodies_second_line_tasse">
-
-                    <img src="goodies_tasse.jpg" alt="">
-
                     <h3>Tasse Sculptée</h3>
-
-                    <p>13,90€</p>
-
+                    <div class="modal">
+                        <p class="title">Information du produit :</p>
+                        <p class="name">Tasse Sculptée</p>
+                        <p>Prix : 13,90€</p>
+                        <p>Description : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id lectus imperdiet, gravida quam ut, luctus nunc. </p>
                     </div>
-
-                    <div class="goodies_second_line_poster">
-                        
-                    <img src="goodies_poster.png" alt="">
-
-                    <h3>Poster du tableau de Marie-Antoinette</h3>
-
-                    <p>19,90€</p>
-
-                    </div>
-                    
-
-                    <div class="goodies_second_line_sweat">
-
-                    <img src="goodies_sweat.jpg" alt="">
-
-                    <h3>Sweatshirt imprimé</h3>
-
-                    <p>29,90€</p>
-
-                    </div>
-
                 </div>
-
+                <div class="goodies_first_line_poster1 goodies_elem">
+                    <img src="goodies_poster.png" alt="">
+                    <h3>Poster du tableau de Marie-Antoinette</h3>
+                    <div class="modal">
+                        <p class="title">Information du produit :</p>
+                        <p class="name">Poster du tableau de Marie-Antoinette</p>
+                        <p>Prix : 19,90€</p>
+                        <p>Description : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id lectus imperdiet, gravida quam ut, luctus nunc. </p>
+                    </div>
+                </div>
+                <div class="goodies_first_line_sweat1 goodies_elem">
+                    <img src="goodies_sweat.jpg" alt="">
+                    <h3>Sweatshirt imprimé </h3>
+                    <div class="modal">
+                        <p class="title">Information du produit :</p>
+                        <p class="name">Sweatshirt imprimé</p>
+                        <p>Prix : 29,90€</p>
+                        <p>Description : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id lectus imperdiet, gravida quam ut, luctus nunc. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="goodies_first_line">
+                <div class="goodies_first_line_tasse1 goodies_elem">
+                    <img src="goodies_tasse.jpg" alt="">
+                    <h3>Tasse Sculptée</h3>
+                    <div class="modal">
+                        <p class="title">Information du produit :</p>
+                        <p class="name">Tasse Sculptée</p>
+                        <p>Prix : 13,90€</p>
+                        <p>Description : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id lectus imperdiet, gravida quam ut, luctus nunc. </p>
+                    </div>
+                </div>
+                <div class="goodies_first_line_poster1 goodies_elem">
+                    <img src="goodies_poster.png" alt="">
+                    <h3>Poster du tableau de Marie-Antoinette</h3>
+                    <div class="modal">
+                        <p class="title">Information du produit :</p>
+                        <p class="name">Poster du tableau de Marie-Antoinette</p>
+                        <p>Prix : 19,90€</p>
+                        <p>Description : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id lectus imperdiet, gravida quam ut, luctus nunc. </p>
+                    </div>
+                </div>
+                <div class="goodies_first_line_sweat1 goodies_elem">
+                    <img src="goodies_sweat.jpg" alt="">
+                    <h3>Sweatshirt imprimé </h3>
+                    <div class="modal">
+                        <p class="title">Information du produit :</p>
+                        <p class="name">Sweatshirt imprimé</p>
+                        <p>Prix : 29,90€</p>
+                        <p>Description : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id lectus imperdiet, gravida quam ut, luctus nunc. </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
+
+<script>
+    let tabElem = document.querySelectorAll('.goodies_elem');
+    let tabModal = document.querySelectorAll('.modal');
+    let overlay = document.querySelector("#overlay");
+    tabElem.forEach(function (items,i){
+        items.addEventListener("click",function (){
+            tabModal[i].classList.add("active");
+            document.querySelector('#overlay').classList.add("active");
+        })
+        overlay.addEventListener("click",function (){
+            tabModal[i].classList.remove("active");
+            document.querySelector('#overlay').classList.remove("active");
+        })
+
+    })
+</script>
