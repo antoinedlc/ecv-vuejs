@@ -35,9 +35,17 @@ a:hover {
   left: 1.6rem;
 }
 
+#nav #link-tickets {
+  position: fixed;
+  left: 2.4rem;
+  bottom: 1.6rem;
+}
+
 #nav #link-shop {
   position: fixed;
-  left: 1.6rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   bottom: 1.6rem;
 }
 
@@ -51,6 +59,31 @@ a:hover {
   position: fixed;
   top: 1.6rem;
   right: 1.6rem;
+}
+
+#nav #theme-toggle:hover {
+  cursor: pointer;
+}
+
+.loader {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 0;
+  width: 0;
+  border-radius: 50%;
+  background: #EFE5AD;
+  -webkit-transition: 0.5s ease-in-out !important;
+  transition: 0.5s ease-in-out !important;
+  z-index: 1000;
+}
+
+.loader.active {
+  width: 135vw;
+  height: 135vw;
 }
 
 html {
@@ -78,10 +111,27 @@ body {
   margin: 0;
 }
 
+.site-content {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.theme--default .site-content {
+  color: #2c3e50;
+  background: #ffffff;
+}
+
+.theme--dark .site-content {
+  color: #efefef;
+  background: #040f0f;
+}
+
 #router-container {
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
   padding: 5.6rem 0;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 .section {

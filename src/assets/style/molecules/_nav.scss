@@ -6,9 +6,16 @@
             left: 1.6rem;
         }
 
+        &-tickets {
+            position: fixed;
+            left: 2.4rem;
+            bottom: 1.6rem;
+        }
+
         &-shop {
             position: fixed;
-            left: 1.6rem;
+            left: 50%;
+            transform: translateX(-50%);
             bottom: 1.6rem;
         }
 
@@ -23,5 +30,9 @@
         position: fixed;
         top: 1.6rem;
         right: 1.6rem;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 }

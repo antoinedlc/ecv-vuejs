@@ -1,0 +1,18 @@
+.loader {
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 0;
+    width: 0;
+    border-radius: 50%;
+    background: #EFE5AD;
+    transition: 0.5s ease-in-out !important;
+    z-index: 1000;
+
+    &.active {
+        width: 135vw;
+        height: 135vw;
+    }
+}

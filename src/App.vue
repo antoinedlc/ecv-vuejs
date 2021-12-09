@@ -1,10 +1,11 @@
 <template>
     <div>
         <div id="nav">
-            <router-link to="/" id="link-home">Accueil</router-link>
-            <span id="theme-toggle">Mode</span>
-            <router-link to="/shop" id="link-shop">Boutique</router-link>
-            <router-link to="/contact" id="link-contact">Contact</router-link>
+            <router-link to="/" tag="span" id="link-home" class="router-link">Accueil</router-link>
+            <span tag="span" id="theme-toggle">Mode</span>
+            <router-link to="/tickets" tag="span" id="link-tickets" class="router-link">Tickets</router-link>
+            <router-link to="/shop" tag="span" id="link-shop" class="router-link">Boutique</router-link>
+            <router-link to="/contact" tag="span" id="link-contact" class="router-link">Contact</router-link>
         </div>
         <div id="router-container">
             <router-view></router-view>

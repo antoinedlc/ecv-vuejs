@@ -8,6 +8,7 @@
 
 // Molecules
 @import './molecules/nav';
+@import './molecules/loader';
 
 html {
     font-size: 62.5%;
@@ -29,9 +30,20 @@ body {
     margin: 0;
 }
 
+.site-content {
+    transition: 0.3s ease-in-out;
+
+    @include themed() {
+        color: t('color');
+        background: t('bg');
+    }
+}
+
 #router-container {
     transition: 0.2s ease;
     padding: 5.6rem 0;
+    min-width: 100vw;
+    min-height: 100vh;
 }
 
 .section {
