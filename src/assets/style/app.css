@@ -93,10 +93,16 @@ div.goodies_first_line .modal {
   border: 1px solid black;
   border-radius: 10px;
   z-index: 10;
-  background-color: white;
   width: 500px;
   max-width: 80%;
   background-color: #EFE5AD;
+}
+div.goodies_first_line .modal a {
+  font-family: "Vidaloka", sans-serif;
+  color: black;
+  border: 1px solid black;
+  padding: 1% 5%;
+  border-radius: 45px;
 }
 div.goodies_first_line .modal p {
   text-align: left;
