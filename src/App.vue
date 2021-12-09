@@ -3,8 +3,10 @@
         <div id="nav">
             <router-link to="/">Home</router-link>
             <router-link to="/about">About</router-link>
-        </div> 
-        <router-view></router-view>
+            <router-link to="/expo">zrgzgaeg</router-link>
+        </div>
+        <router-view id="router-view"></router-view>
+        <h1>BOUGE PAS</h1>
     </div>
 </template>
 
