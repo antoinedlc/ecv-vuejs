@@ -2,11 +2,13 @@
 @import './global/fonts';
 @import './global/variables';
 @import './global/typography';
+@import './layout/expo';
 
 // Atoms
 @import './atoms/links';
 
 html {
+    background-color: black;
     font-size: 62.5%;
 }
 

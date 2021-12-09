@@ -8,7 +8,6 @@
         <div id="router-container">
             <router-view></router-view>
         </div>
-        <h1>BOUGE PAS</h1>
     </div>
 </template>
 

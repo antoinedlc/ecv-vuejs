@@ -1,7 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
 p {
   margin-bottom: 2.4rem;
 }
-
 p:last-child {
   margin-bottom: 0;
 }
@@ -16,20 +16,129 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
+div.expo_container {
+  width: 80%;
+  margin: 0 auto;
+}
+div.expo_container > .expo_header {
+  margin: 5% 0;
+}
+div.expo_container > .expo_header h1 {
+  font-family: "Vidaloka", serif;
+  color: #EFE5AD;
+}
+div.expo_container > .expo_list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+div.expo_container > .expo_list > .cross {
+  display: none;
+}
+div.expo_container > .expo_list > .cross.enable {
+  display: block;
+  z-index: 11111;
+}
+div.expo_container > .expo_list > .cross.enable img.cross {
+  cursor: pointer;
+  height: auto;
+  display: block;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  z-index: 99;
+  width: 5%;
+}
+div.expo_container > .expo_list > .list_indiv {
+  cursor: pointer;
+  display: flex;
+  width: 25%;
+  height: 35vw;
+  position: relative;
+  overflow: hidden;
+  opacity: 0.5;
+}
+div.expo_container > .expo_list > .list_indiv > .description {
+  display: none;
+}
+div.expo_container > .expo_list > .list_indiv > .description p.date {
+  writing-mode: vertical-lr;
+  font-size: 120px;
+  color: #EFE5AD;
+}
+div.expo_container > .expo_list > .list_indiv > .description p.desc {
+  display: none;
+}
+div.expo_container > .expo_list > .list_indiv > .description p.title_painting {
+  display: none;
+}
+div.expo_container > .expo_list > .list_indiv img.cross {
+  display: none;
+}
+div.expo_container > .expo_list > .list_indiv img {
+  position: absolute;
+  height: 100%;
+  left: -75%;
+}
+div.expo_container > .expo_list :hover {
+  opacity: 1;
+}
+div.expo_container > .expo_list :hover > .description {
+  display: block;
+  z-index: 1;
+}
+div.expo_container > .expo_list :hover > .description p.date {
+  display: block;
+}
+div.expo_container > .expo_list .fullscreen {
+  width: 100%;
+  opacity: 1;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+div.expo_container > .expo_list .fullscreen img {
+  width: 100%;
+  object-fit: cover;
+  left: unset;
+  opacity: 1;
+  height: 100%;
+  z-index: -1;
+}
+div.expo_container > .expo_list .fullscreen > .description {
+  margin: 0 5%;
+  display: block;
+  opacity: 1;
+}
+div.expo_container > .expo_list .fullscreen > .description p.date {
+  display: none;
+}
+div.expo_container > .expo_list .fullscreen > .description p.desc {
+  display: block;
+  font-size: 28px;
+  color: #EFE5AD;
+}
+div.expo_container > .expo_list .fullscreen > .description p.title_painting {
+  color: #EFE5AD;
+  font-size: 100px;
+  display: block;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
-
 a:active, a:focus, a:visited {
   color: inherit;
 }
-
 a:hover {
   cursor: pointer;
 }
 
 html {
+  background-color: black;
   font-size: 62.5%;
 }
 
@@ -38,13 +147,8 @@ body {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -53,7 +157,7 @@ body {
 }
 
 #router-container {
-  -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
 }
+
 /*# sourceMappingURL=app.css.map */
