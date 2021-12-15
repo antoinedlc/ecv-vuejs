@@ -1,0 +1,45 @@
+.ticket {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.2rem;
+
+    &__image {
+        width: 100%;
+        padding-bottom: 20rem;
+        content: "";
+        background: no-repeat center/cover;
+        margin-bottom: 1.6rem;
+    }
+
+    &__date {
+        margin-bottom: 0.2rem;
+        text-transform: lowercase;
+    }
+
+    &__title {
+        font-size: 2rem;
+        font-family: 'Vidaloka', serif;
+        margin-bottom: 0.2rem;
+    }
+
+    &__place {
+        opacity: 0.65;
+        text-transform: uppercase;
+        margin-bottom: 0.4rem;
+    }
+
+    &__price {
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-bottom: 0.8rem;
+    }
+
+    &__link {
+        transition: 0.2s ease;
+
+        &:hover {
+            cursor: pointer;
+            color: $gold;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 100%;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    width: 37.5%;
+    padding-left: 12.8rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    form {
+        margin-top: 2.4rem;
+        display: flex;
+        flex-direction: column;
+
+        .field {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 1.6rem;
+            
+            label {
+                font-size: 1.6rem;
+                font-family: 'Vidaloka', serif;
+                margin-bottom: 0.8rem;
+            }
+
+            input, textarea, select {
+                background: none;
+                box-shadow: none;
+                outline: none;
+                padding: 0.8rem 1.6rem;
+                border: 0.1rem solid $gold;
+                color: inherit !important;
+                border-radius: 0.8rem;
+                font-family: sans-serif;
+            }
+            
+            textarea {
+                height: 10rem;
+            }
+        }
+
+        .name {
+            display: flex;
+            justify-content: space-between;
+
+            .field {
+                width: 48.5%;
+            }
+        }
+    }
+}
+
+.contact__image {
+    width: 42.5%;
+    content: "";
+    background: no-repeat center/cover;
+    height: auto;
+}

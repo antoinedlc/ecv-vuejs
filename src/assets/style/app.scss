@@ -10,6 +10,10 @@
 @import './molecules/nav';
 @import './molecules/loader';
 
+// Layout
+@import './layout/contact';
+@import './layout/tickets';
+
 html {
     font-size: 62.5%;
 }
@@ -36,6 +40,10 @@ body {
     @include themed() {
         color: t('color');
         background: t('bg');
+
+        *.title, label, .ticket__title {
+            color: t('title');
+        }
     }
 }
 

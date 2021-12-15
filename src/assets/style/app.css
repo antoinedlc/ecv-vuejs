@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
 p {
   margin-bottom: 2.4rem;
 }
 
 p:last-child {
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -12,8 +14,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .title {
-  font-size: 3.2rem;
-  font-weight: 700;
+  font-size: 5.6rem;
+  font-family: 'Vidaloka', serif;
+  color: inherit;
+}
+
+.subtitle {
+  font-family: 'Vidaloka', serif;
+  font-size: 2rem;
+  margin-bottom: 4.8rem !important;
 }
 
 a {
@@ -86,6 +95,150 @@ a:hover {
   height: 135vw;
 }
 
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  height: 100%;
+}
+
+.contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 37.5%;
+  padding-left: 12.8rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.contact__form form {
+  margin-top: 2.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__form form .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-bottom: 1.6rem;
+}
+
+.contact__form form .field label {
+  font-size: 1.6rem;
+  font-family: 'Vidaloka', serif;
+  margin-bottom: 0.8rem;
+}
+
+.contact__form form .field input, .contact__form form .field textarea, .contact__form form .field select {
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  padding: 0.8rem 1.6rem;
+  border: 0.1rem solid #EFE5AD;
+  color: inherit !important;
+  border-radius: 0.8rem;
+  font-family: sans-serif;
+}
+
+.contact__form form .field textarea {
+  height: 10rem;
+}
+
+.contact__form form .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact__form form .name .field {
+  width: 48.5%;
+}
+
+.contact__image {
+  width: 42.5%;
+  content: "";
+  background: no-repeat center/cover;
+  height: auto;
+}
+
+.ticket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 3.2rem;
+}
+
+.ticket__image {
+  width: 100%;
+  padding-bottom: 20rem;
+  content: "";
+  background: no-repeat center/cover;
+  margin-bottom: 1.6rem;
+}
+
+.ticket__date {
+  margin-bottom: 0.2rem;
+  text-transform: lowercase;
+}
+
+.ticket__title {
+  font-size: 2rem;
+  font-family: 'Vidaloka', serif;
+  margin-bottom: 0.2rem;
+}
+
+.ticket__place {
+  opacity: 0.65;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.ticket__price {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.ticket__link {
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.ticket__link:hover {
+  cursor: pointer;
+  color: #EFE5AD;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -121,9 +274,17 @@ body {
   background: #ffffff;
 }
 
+.theme--default .site-content *.title, .theme--default .site-content label, .theme--default .site-content .ticket__title {
+  color: #000000;
+}
+
 .theme--dark .site-content {
   color: #efefef;
   background: #040f0f;
+}
+
+.theme--dark .site-content *.title, .theme--dark .site-content label, .theme--dark .site-content .ticket__title {
+  color: #EFE5AD;
 }
 
 #router-container {
