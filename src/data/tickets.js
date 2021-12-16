@@ -5,6 +5,7 @@ export const DataTickets = [
         title: 'Expérience GOYA',
         place: 'Musée des Beaux Arts de Lille',
         price: '8.50€',
+        value: '8.5',
         date: '15 OCTOBRE 2021 - 14 FÉVRIER 2022'
     },
     {
@@ -13,6 +14,7 @@ export const DataTickets = [
         title: 'Expérience GOYA 2',
         place: 'Musée des Beaux Arts de Lille',
         price: '8.50€',
+        value: '8.5',
         date: '15 OCTOBRE 2021 - 14 FÉVRIER 2022'
     },
     {
@@ -21,6 +23,7 @@ export const DataTickets = [
         title: 'Expérience GOYA 3',
         place: 'Musée des Beaux Arts de Lille',
         price: '8.50€',
+        value: '8.5',
         date: '15 OCTOBRE 2021 - 14 FÉVRIER 2022'
     },
     {
@@ -29,6 +32,7 @@ export const DataTickets = [
         title: 'Expérience GOYA 4',
         place: 'Musée des Beaux Arts de Lille',
         price: '8.50€',
+        value: '8.5',
         date: '15 OCTOBRE 2021 - 14 FÉVRIER 2022'
     },
     {
@@ -36,7 +40,8 @@ export const DataTickets = [
         idExpo: '4',
         title: 'Expérience GOYA 5',
         place: 'Musée des Beaux Arts de Lille',
-        price: '8.50€',
+        price: '10.50€',
+        value: '10.5',
         date: '15 OCTOBRE 2021 - 14 FÉVRIER 2022'
     }
 ]

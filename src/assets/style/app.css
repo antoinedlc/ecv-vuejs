@@ -114,6 +114,26 @@ a:hover {
   cursor: pointer;
 }
 
+#nav .money-change {
+  position: fixed;
+  top: 1.6rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 50;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#nav .money-change span {
+  margin: 0 1.6rem;
+}
+
+#nav .money-change div:hover {
+  cursor: pointer;
+}
+
 .loader {
   content: "";
   position: fixed;
@@ -384,6 +404,97 @@ a:hover {
 .ticket__link:hover {
   cursor: pointer;
   color: #EFE5AD;
+}
+
+.prochaine_expo {
+  font-family: 'Vidaloka';
+}
+
+.prochaine_expo h1 {
+  font-family: 'Vidaloka';
+  text-align: center;
+}
+
+.prochaine_expo .prochaines_expo_first {
+  margin-left: 5%;
+  display: inline-block;
+  width: 21%;
+}
+
+.prochaine_expo .prochaines_expo_first img {
+  width: 80%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.prochaine_expo .prochaines_expo_first p {
+  font-size: 24px;
+}
+
+.prochaine_expo .prochaines_expo_first span {
+  font-size: 36px;
+}
+
+.prochaine_expo .prochaines_expo_second {
+  margin-left: 2%;
+  display: inline-block;
+  width: 21%;
+}
+
+.prochaine_expo .prochaines_expo_second img {
+  width: 90%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.prochaine_expo .prochaines_expo_second p {
+  font-size: 24px;
+}
+
+.prochaine_expo .prochaines_expo_second span {
+  font-size: 36px;
+}
+
+.prochaine_expo .prochaines_expo_three {
+  margin-left: 2%;
+  display: inline-block;
+  width: 21%;
+}
+
+.prochaine_expo .prochaines_expo_three img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.prochaine_expo .prochaines_expo_three p {
+  font-size: 24px;
+}
+
+.prochaine_expo .prochaines_expo_three span {
+  font-size: 36px;
+}
+
+.prochaine_expo .prochaines_expo_four {
+  margin-left: 2%;
+  display: inline-block;
+  width: 21%;
+}
+
+.prochaine_expo .prochaines_expo_four img {
+  width: 100%;
+  height: 200px;
+}
+
+.prochaine_expo .prochaines_expo_four p {
+  font-size: 24px;
+}
+
+.prochaine_expo .prochaines_expo_four span {
+  font-size: 36px;
 }
 
 html {

@@ -2,6 +2,13 @@
     <div>
         <div id="nav">
             <router-link to="/" tag="span" id="link-home" class="router-link">Accueil</router-link>
+            <div class="money-change">
+                <div id="euro-change">€</div>
+                <span>|</span>
+                <div id="dollar-change">$</div>
+                <span>|</span>
+                <div id="yen-change">¥</div>
+            </div>
             <span tag="span" id="theme-toggle">Mode</span>
             <router-link to="/tickets" tag="span" id="link-tickets" class="router-link">Tickets</router-link>
             <router-link to="/shop" tag="span" id="link-shop" class="router-link">Boutique</router-link>
