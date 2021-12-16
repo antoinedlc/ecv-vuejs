@@ -38,16 +38,53 @@ a:hover {
   cursor: pointer;
 }
 
+.button--circle {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: 'Vidaloka', serif;
+  width: 12rem;
+  height: 12rem;
+  background: #EFE5AD;
+  border-radius: 50%;
+  position: relative;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  margin-top: 6.4rem;
+  margin-bottom: 6.4rem;
+}
+
+.button--circle:hover {
+  margin-top: 3.2rem;
+  height: 15.2rem;
+  width: 15.2rem;
+}
+
+.button--circle span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #2c3e50;
+}
+
+#nav * {
+  z-index: 150;
+}
+
 #nav #link-home {
   position: fixed;
   top: 1.6rem;
   left: 1.6rem;
+  z-index: 50;
 }
 
 #nav #link-tickets {
   position: fixed;
   left: 2.4rem;
   bottom: 1.6rem;
+  z-index: 50;
 }
 
 #nav #link-shop {
@@ -56,18 +93,21 @@ a:hover {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   bottom: 1.6rem;
+  z-index: 50;
 }
 
 #nav #link-contact {
   position: fixed;
   right: 1.6rem;
   bottom: 1.6rem;
+  z-index: 50;
 }
 
 #nav #theme-toggle {
   position: fixed;
   top: 1.6rem;
   right: 1.6rem;
+  z-index: 50;
 }
 
 #nav #theme-toggle:hover {
@@ -93,6 +133,113 @@ a:hover {
 .loader.active {
   width: 135vw;
   height: 135vw;
+}
+
+.homepage {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background: no-repeat center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.homepage__overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.75)));
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.75));
+  display: block;
+  z-index: 1;
+}
+
+.homepage__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 5;
+}
+
+.homepage__content__title {
+  font-family: 'Vidaloka', serif;
+  font-size: 16rem;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  margin-bottom: 2.4rem;
+  color: #EFE5AD;
+  position: relative;
+}
+
+.homepage__content__title::after {
+  content: "";
+  display: block;
+  height: 0.1rem;
+  background: #EFE5AD;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.homepage__content p {
+  text-align: center;
+  color: #EFE5AD;
+  font-family: 'Vidaloka', serif;
+  font-size: 2rem;
+}
+
+.about {
+  margin-top: 5.6rem;
+  padding-left: 6.4rem;
+  border-left: 0.1rem solid #EFE5AD;
+  width: 75%;
+}
+
+.about p {
+  margin-bottom: 1.6rem;
+}
+
+.about .button--circle {
+  margin-top: 3.2rem;
+  margin-bottom: 0;
+  margin-left: auto;
+  display: block;
+}
+
+.about .button--circle:hover {
+  margin-top: 3.2rem;
+  margin-bottom: 0;
+  margin-left: auto;
+  width: 12rem;
+  height: 12rem;
+  background: #e9db8d;
+}
+
+.quote {
+  font-size: 3.2rem;
+  margin-top: 1.6rem;
+  margin-bottom: 3.2rem;
+  font-family: 'Vidaloka', serif;
 }
 
 .contact {
@@ -274,7 +421,7 @@ body {
   background: #ffffff;
 }
 
-.theme--default .site-content *.title, .theme--default .site-content label, .theme--default .site-content .ticket__title {
+.theme--default .site-content *.title, .theme--default .site-content label, .theme--default .site-content .ticket__title, .theme--default .site-content .quote {
   color: #000000;
 }
 
@@ -283,7 +430,7 @@ body {
   background: #040f0f;
 }
 
-.theme--dark .site-content *.title, .theme--dark .site-content label, .theme--dark .site-content .ticket__title {
+.theme--dark .site-content *.title, .theme--dark .site-content label, .theme--dark .site-content .ticket__title, .theme--dark .site-content .quote {
   color: #EFE5AD;
 }
 

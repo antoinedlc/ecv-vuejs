@@ -1,0 +1,33 @@
+.about {
+    margin-top: 5.6rem;
+    padding-left: 6.4rem;
+    border-left: 0.1rem solid $gold;
+    width: 75%;
+
+    p {
+        margin-bottom: 1.6rem;
+    }
+
+    .button--circle {
+        margin-top: 3.2rem;
+        margin-bottom: 0;
+        margin-left: auto;
+        display: block;
+
+        &:hover {
+            margin-top: 3.2rem;
+            margin-bottom: 0;
+            margin-left: auto;
+            width: 12rem;
+            height: 12rem;
+            background: darken($gold, 7.5%);
+        }
+    }
+}
+
+.quote {
+    font-size: 3.2rem;
+    margin-top: 1.6rem;
+    margin-bottom: 3.2rem;
+    font-family: 'Vidaloka', serif;
+}

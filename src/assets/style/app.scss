@@ -5,12 +5,15 @@
 
 // Atoms
 @import './atoms/links';
+@import './atoms/buttons';
 
 // Molecules
 @import './molecules/nav';
 @import './molecules/loader';
 
 // Layout
+@import './layout/homepage';
+@import './layout/about';
 @import './layout/contact';
 @import './layout/tickets';
 
@@ -41,7 +44,7 @@ body {
         color: t('color');
         background: t('bg');
 
-        *.title, label, .ticket__title {
+        *.title, label, .ticket__title, .quote {
             color: t('title');
         }
     }

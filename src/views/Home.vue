@@ -1,28 +1,18 @@
 <template>
-    <div class="section">
-        <Sample title="Home" content="Ceci est la description !" :items="DataSample.items" />
-        <ImgContent :src="require('../assets/img/logo.png')" title="Image + contenu" content="Ceci est la description !" />
+    <div class="homepage" style="background-image: url('https://img4.goodfon.com/wallpaper/nbig/0/c5/muzei-estestvoznaniia-london-angliia-zal.jpg')">
+        <div class="homepage__content">
+            <h1 class="homepage__content__title">Museo</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id lectus imperdiet, gravida</p>
+            <router-link to="/about" class="button--circle">
+                <span>En savoir plus</span>
+            </router-link>
+        </div>
+        <div class="homepage__overlay"></div>
     </div>
 </template>
 
 <script>
-    // Import dynamic data
-    import { DataSample } from '../data/sample.js'
-
-    // Import component
-    import Sample from '../components/Sample.vue'
-    import ImgContent from '../components/ImgContent.vue'
-
     export default {
-        // Define dynamic data to pass in the template
-        created() {
-            this.DataSample = DataSample
-        },
         name: 'Home',
-        // Specify which components are used
-        components: {
-            ImgContent,
-            Sample
-        }
     }
-</script>
+</script>s

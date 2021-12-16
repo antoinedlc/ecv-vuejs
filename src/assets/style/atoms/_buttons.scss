@@ -1,0 +1,28 @@
+.button {
+    &--circle {
+        width: fit-content;
+        font-family: 'Vidaloka', serif;
+        width: 12rem;
+        height: 12rem;
+        background: $gold;
+        border-radius: 50%;
+        position: relative;
+        transition: 0.2s ease;
+        margin-top: 6.4rem;
+        margin-bottom: 6.4rem;
+
+        &:hover {
+            margin-top: 3.2rem;
+            height: 15.2rem;
+            width: 15.2rem;
+        }
+
+        span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $gray_blue_dark;
+        }
+    }
+}
