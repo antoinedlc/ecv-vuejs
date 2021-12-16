@@ -4,6 +4,7 @@ $black: #000000;
 $gray_blue_dark: #2c3e50;
 $bg_dark: #040f0f;
 $gray_ligher: #efefef;
+$purple: darken(#687CC5, 10%);
 
 $gold: #EFE5AD;
 
@@ -17,7 +18,7 @@ $themes: (
     default: (
         bg: $white,
         color: $gray_blue_dark,
-        title: $black,
+        title: $purple,
     ),
     dark: (
         bg: $bg_dark,

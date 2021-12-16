@@ -45,7 +45,7 @@ body {
         color: t('color');
         background: t('bg');
 
-        *.title, label, .ticket__title, .quote {
+        *.title, label, .ticket__title, .quote, .expo__title {
             color: t('title');
         }
     }

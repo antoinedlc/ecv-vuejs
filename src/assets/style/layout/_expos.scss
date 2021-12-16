@@ -1,72 +1,54 @@
-.prochaine_expo {
-    font-family: 'Vidaloka';
-    h1 {
-        font-family: 'Vidaloka';
-        text-align: center;
+.expos {
+    .swiper-expos {
+        margin-top: 2.4rem;
     }
-    .prochaines_expo_first {
-        margin-left: 5%;
-        display: inline-block;
-        width:21%;
-        img {
-            width : 80%;
-            height: 300px;
-            object-fit: cover;
+
+    .expo {
+        display: flex;
+        flex-direction: column;
+
+        &:nth-child(even) {
+            .expo__image {
+                order: 2;
+            }
+
+            .expo__content {
+                order: 1;
+                margin-top: 0;
+                margin-bottom: 1.2rem;
+            }
         }
-        p {
-            font-size: 24px;
+
+        &__image {
+            width: 100%;
+            padding-bottom: 55vh;
+            content: "";
+            background: no-repeat top center/cover;
         }
-        span {
-            font-size: 36px;
+
+        &__date {
+            text-transform: lowercase;
         }
-    
-    }
-    .prochaines_expo_second{
-        margin-left: 2%;
-        display: inline-block;
-        width: 21%;
-        img {
-            width : 90%;
-            height: 400px;
-            object-fit: cover;
+
+        &__title {
+            font-size: 3.2rem;
+            font-family: 'Vidaloka', serif;
         }
-        p {
-            font-size: 24px;
+
+        &__place {
+            text-transform: uppercase;
+            filter: opacity(0.65);
         }
-        span {
-            font-size: 36px;
+
+        &__price {
+            font-size: 2.4rem;
+            font-weight: 900;
         }
-    }
-    .prochaines_expo_three {
-        margin-left: 2%;
-        display: inline-block;
-        width:21%;
-        img {
-            width : 100%;
-            height: 300px;
-            object-fit: cover;
-        }
-        p {
-            font-size: 24px;
-        }
-        span {
-            font-size: 36px;
-        }
-    }
-    .prochaines_expo_four{
-        margin-left: 2%;
-        display: inline-block;
-        width: 21%;
-        img {
-            width : 100%;
-            height: 200px;
-            
-        }
-        p {
-            font-size: 24px;
-        }
-        span {
-            font-size: 36px;
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            margin-top: 1.2rem;
         }
     }
 }
