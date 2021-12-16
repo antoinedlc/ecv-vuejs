@@ -54,7 +54,7 @@ export const DataExpos = [
         place: 'Musée des Beaux Arts de Lille',
         price: '8.50€',
         value: '8.5',
-        date: '15 OCTOBRE 2021 - 14 FÉVRIER 2022'
+        date: '15 OCTOBRE 2021 - 14 FÉVRIER 2022',
 
         paintings: [
             {
@@ -103,7 +103,7 @@ export const DataExpos = [
         place: 'Musée des Beaux Arts de Lille',
         price: '8.50€',
         value: '8.5',
-        date: '15 OCTOBRE 2021 - 14 FÉVRIER 2022'
+        date: '15 OCTOBRE 2021 - 14 FÉVRIER 2022',
 
         paintings: [
             {
@@ -152,7 +152,7 @@ export const DataExpos = [
         place: 'Musée des Beaux Arts de Lille',
         price: '8.50€',
         value: '8.5',
-        date: '15 OCTOBRE 2021 - 14 FÉVRIER 2022'
+        date: '15 OCTOBRE 2021 - 14 FÉVRIER 2022',
 
         paintings: [
             {
@@ -201,7 +201,7 @@ export const DataExpos = [
         place: 'Musée des Beaux Arts de Lille',
         price: '10.50€',
         value: '10.5',
-        date: '15 OCTOBRE 2021 - 14 FÉVRIER 2022'
+        date: '15 OCTOBRE 2021 - 14 FÉVRIER 2022',
 
         paintings: [
             {
