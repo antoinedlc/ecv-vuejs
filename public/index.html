@@ -21,6 +21,36 @@
                 <div class="loader"></div>
                 <div id="app">
                 </div>
+
+<!--                modification Théo popup newsletter-->
+                <div class="newsletter disable">
+                    <div class="overlay"></div>
+                    <div class="newsletter_container">
+                        <h2>Rejoignez notre newsletter</h2>
+                        <p>inscrivez-vous pour recevoir les dernières offres, expositions du musée</p>
+                        <div class="doubleinput">
+                            <input type="text" placeholder="Prénom">
+                            <input type="text" placeholder="Nom">
+                        </div>
+                        <input type="email" placeholder="Adresse mail">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+                    </div>
+                </div>
+                <script>
+                    let htmldiv = document.querySelector(".site-content");
+                    let newsletter = document.querySelector(".newsletter");
+                    let newsletterCross = document.querySelector(".newsletter_container svg");
+                    console.log(newsletter);
+                    newsletterCross.addEventListener("click", function (){
+                        newsletter.classList.add("disable");
+                    });
+                    htmldiv.addEventListener("mouseleave", function (){
+                        newsletter.classList.remove("disable");
+                    });
+                </script>
+
+
+
             </div>
         </main>
         <!-- built files will be auto injected -->
