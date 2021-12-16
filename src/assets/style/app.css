@@ -154,6 +154,85 @@ a:hover {
   height: 135vw;
 }
 
+div.newsletter {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  display: block;
+  z-index: 99;
+}
+
+div.newsletter div.overlay {
+  width: 100%;
+  background-color: black;
+  height: 100vh;
+  opacity: 0.6;
+}
+
+div.newsletter div.newsletter_container {
+  padding: 5%;
+  width: 60vw;
+  background-color: #EFE5AD;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+div.newsletter div.newsletter_container p {
+  font-family: "Vidaloka", serif;
+  font-size: 2rem;
+}
+
+div.newsletter div.newsletter_container div.doubleinput {
+  margin-bottom: 2%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.newsletter div.newsletter_container div.doubleinput input {
+  width: 42%;
+}
+
+div.newsletter div.newsletter_container input {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 30px;
+  border: 1px solid #979797;
+  margin-bottom: 1%;
+  border-radius: unset;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  color: #000;
+}
+
+div.newsletter div.newsletter_container svg {
+  position: absolute;
+  top: 10%;
+  right: 3%;
+}
+
+div.newsletter.disable {
+  display: none;
+}
+
 .homepage {
   padding: 0;
   margin: 0;
@@ -438,7 +517,7 @@ a:hover {
 
 .expos .expo__image {
   width: 100%;
-  padding-bottom: 55vh;
+  padding-bottom: 35vh;
   content: "";
   background: no-repeat top center/cover;
 }
