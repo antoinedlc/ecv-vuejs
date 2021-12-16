@@ -1,0 +1,86 @@
+export const DataGoodies = [
+    {
+        id: '0',
+        title: 'Tasse en porcelaine - Expo "India Flavours"',
+        price: '12.57€',
+        value: '12.57',
+    },
+    {
+        id: '1',
+        title: 'Tasse en porcelaine - Expo "India Flavours"',
+        price: '12.57€',
+        value: '12.57',
+    },
+    {
+        id: '2',
+        title: 'Tasse en porcelaine - Expo "India Flavours"',
+        price: '12.57€',
+        value: '12.57',
+    },
+    {
+        id: '3',
+        title: 'Tasse en porcelaine - Expo "India Flavours"',
+        price: '12.57€',
+        value: '12.57',
+    },
+    {
+        id: '4',
+        title: 'Tasse en porcelaine - Expo "India Flavours"',
+        price: '12.57€',
+        value: '12.57',
+    },
+    {
+        id: '5',
+        title: 'Tasse en porcelaine - Expo "India Flavours"',
+        price: '12.57€',
+        value: '12.57',
+    },
+    {
+        id: '6',
+        title: 'Tasse en porcelaine - Expo "India Flavours"',
+        price: '12.57€',
+        value: '12.57',
+    },
+    {
+        id: '7',
+        title: 'Tasse en porcelaine - Expo "India Flavours"',
+        price: '12.57€',
+        value: '12.57',
+    },
+    {
+        id: '8',
+        title: 'Tasse en porcelaine - Expo "India Flavours"',
+        price: '12.57€',
+        value: '12.57',
+    },
+    {
+        id: '9',
+        title: 'Tasse en porcelaine - Expo "India Flavours"',
+        price: '12.57€',
+        value: '12.57',
+    },
+    {
+        id: '10',
+        title: 'Tasse en porcelaine - Expo "India Flavours"',
+        price: '12.57€',
+        value: '12.57',
+    },
+    {
+        id: '11',
+        title: 'Tasse en porcelaine - Expo "India Flavours"',
+        price: '12.57€',
+        value: '12.57',
+    },
+    {
+        id: '12',
+        title: 'Tasse en porcelaine - Expo "India Flavours"',
+        price: '12.57€',
+        value: '12.57',
+    },
+    {
+        id: '13',
+        title: 'Tasse en porcelaine - Expo "India Flavours"',
+        price: '12.57€',
+        value: '12.57',
+    },
+]

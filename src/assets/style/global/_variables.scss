@@ -15,15 +15,17 @@ $transition: all 0.3s ease-in-out;
 
 // Light and dark theme variables
 $themes: (
-    default: (
+    dark: (
         bg: $white,
         color: $gray_blue_dark,
         title: $purple,
+        contrast: $white,
     ),
-    dark: (
+    default: (
         bg: $bg_dark,
         color: $gray_ligher,
         title: $gold,
+        contrast: $black,
     )
 );
 

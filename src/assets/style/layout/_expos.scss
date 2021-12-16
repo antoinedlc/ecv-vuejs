@@ -52,3 +52,113 @@
         }
     }
 }
+
+div.expo_container{
+    width: 80%;
+    margin: 0 auto;
+    & > .expo_header{
+      margin: 5% 0;
+      h1{
+        font-family: 'Vidaloka', serif;
+        color: $gold;
+      }
+    }
+    & > .expo_list{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      & > .cross{
+        display: none;
+      }
+      & > .cross.enable{
+        display: block;
+        z-index: 11111;
+        img.cross{
+          cursor: pointer;
+          height: auto;
+          display: block;
+          position: absolute;
+          top: 5%;
+          right: 5%;
+          z-index: 99;
+          width: 5%;
+        }
+      }
+      & > .list_indiv{
+        cursor: pointer;
+        display: flex;
+        width: 25%;
+        height: 35vw;
+        position: relative;
+        overflow: hidden;
+        opacity: 0.5;
+        & > .description{
+          display: none;
+          p.date{
+            writing-mode: vertical-lr;
+            font-size: 120px;
+            color: $gold;
+          }
+          p.desc{
+            display: none;
+          }
+          p.title_painting{
+            display: none;
+          }
+        }
+        img.cross{
+          display: none;
+        }
+        img{
+          position: absolute;
+          height: 100%;
+          left: -75%;
+        }
+      }
+      :hover{
+        opacity: 1;
+        & > .description{
+          display: block;
+          z-index: 1;
+          p.date{
+            display: block;
+          }
+        }
+      }
+      .fullscreen{
+        width: 100%;
+        opacity: 1;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        img{
+          width: 100%;
+          object-fit: cover;
+          left: unset;
+          opacity: 1;
+          height: 100%;
+          z-index: -1;
+        }
+        & > .description{
+          margin: 0 5%;
+          display: block;
+          opacity: 1;
+          p.date{
+            display: none;
+          }
+          p.desc{
+            display: block;
+            font-size: 28px;
+            color: $gold;
+          }
+          p.title_painting{
+            color: $gold;
+            font-size: 100px;
+            display: block;
+          }
+        }
+      }
+    }
+  }

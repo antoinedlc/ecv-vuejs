@@ -1,7 +1,7 @@
 <template>
     <div class="section expos">
         <div class="heading">
-            <h1 class="title">Expositions</h1>
+            <h1 class="title text-main">Expositions</h1>
             <p class="subtitle">Trouvez-ici nos expositions phare !</p>
         </div>
         <div class="swiper swiper-expos">
@@ -13,7 +13,7 @@
                         <span class="expo__date">{{ expo.date }}</span>
                         <h2 class="expo__title">{{ expo.title }}</h2>
                         <span class="expo__place">{{ expo.place }}</span>
-                        <h3 class="expo__price price-change" :data-value="expo.value" data-change="euro">{{ expo.price }}</h3>
+                        <h3 class="expo__price price-change text-main" :data-value="expo.value" data-change="euro">{{ expo.price }}</h3>
                         <router-link to="/expo" class="expo-page-button" :data-expo_id="expo.id">En savoir plus</router-link>
                         <router-link to="/contact" class="expo-form-button expo__link" :data-expo_id="expo.id">Acheter des places</router-link>
                     </div>

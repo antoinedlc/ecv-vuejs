@@ -17,6 +17,7 @@
 @import './layout/contact';
 @import './layout/tickets';
 @import './layout/expos';
+@import './layout/shop';
 
 html {
     font-size: 62.5%;
@@ -45,8 +46,21 @@ body {
         color: t('color');
         background: t('bg');
 
-        *.title, label, .ticket__title, .quote, .expo__title {
-            color: t('title');
+        // *.title, label, .ticket__title, .quote, .expo__title {
+        //     color: t('title');
+        // }
+
+        *.text-main {
+            color: t(title) !important;
+        }
+
+        *.bg-main {
+            color: t(contrast) !important;
+            background: t(title) !important;
+        }
+
+        *.border-main {
+            border-color: t(title) !important;
         }
     }
 }

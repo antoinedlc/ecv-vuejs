@@ -3,11 +3,11 @@
         <div class="contact__image" style="background-image: url('https://freerangestock.com/sample/123268/woman-in-art-gallery-.jpg')">
         </div>
         <div class="contact__form">
-            <h1 class="title">Contactez-nous :</h1>
+            <h1 class="title text-main">Contactez-nous :</h1>
             <form action="">
                 <div class="field">
                     <label for="subject">Sujet :</label>
-                    <select name="expo_select" id="expo_select">
+                    <select name="expo_select" id="expo_select" class="border-main">
                         <option v-if="selectedExpoID" :value="selectedExpoID">{{ selectedExpoTitle }}</option>
                         <option v-else value="">Sélectionnez une exposition</option>
                         <option v-for="expo in expos" :key="expo.id" :value="expo.id">{{ expo.title }}</option>
@@ -16,20 +16,20 @@
                 <div class="name">
                     <div class="field">
                         <label for="firstname">Prénom :</label>
-                        <input type="text" name="firstname" placeholder="Prénom">
+                        <input class="border-main" type="text" name="firstname" placeholder="Prénom">
                     </div>
                     <div class="field">
                         <label for="lastname">Nom :</label>
-                        <input type="text" name="lastname" placeholder="Nom">
+                        <input class="border-main" type="text" name="lastname" placeholder="Nom">
                     </div>
                 </div>
                 <div class="field">
                     <label for="email">Adresse mail :</label>
-                    <input type="email" name="email" placeholder="Votre adresse email">
+                    <input class="border-main" type="email" name="email" placeholder="Votre adresse email">
                 </div>
                 <div class="field">
                     <label for="message">Message :</label>
-                    <textarea name="message"></textarea>
+                    <textarea class="border-main" name="message"></textarea>
                 </div>
             </form>
         </div>

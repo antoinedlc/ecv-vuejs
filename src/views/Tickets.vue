@@ -1,7 +1,7 @@
 <template>
     <div class="section">
         <div class="heading">
-            <h1 class="title">Tickets</h1>
+            <h1 class="title text-main">Tickets</h1>
             <p class="subtitle">Trouvez-ici les tickets pour les différentes expositions</p>
         </div>
         <div class="swiper swiper-tickets">
@@ -11,7 +11,7 @@
                     <span class="ticket__date">{{ ticket.date }}</span>
                     <h2 class="ticket__title">{{ ticket.title }}</h2>
                     <span class="ticket__place">{{ ticket.place }}</span>
-                    <h3 class="ticket__price price-change" :data-value="ticket.value" data-change="euro">{{ ticket.price }}</h3>
+                    <h3 class="ticket__price price-change text-main" :data-value="ticket.value" data-change="euro">{{ ticket.price }}</h3>
                     <router-link to="/contact" class="ticket-form-button ticket__link" :data-expo_id="ticket.idExpo">Ouvrir le formulaire</router-link>
                 </div>
             </div>
